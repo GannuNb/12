@@ -5,12 +5,18 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import "./tyrecutting.css"
 import './Plasticbaler.css'
 
+import metalshredderimg1 from "./images/metalbalerimages1.jpg"
+import metalshredderimg2 from "./images/metalbalerimages2jpg.jpg"
+import metalshredderimg3 from "./images/metalbalerimages3jpg.jpg"
 
 
 
 
 
 class Metalbalers extends Component {
+    componentDidMount() {
+        window.scrollTo(0, 0);
+    }
 
   
     render() {
@@ -28,15 +34,15 @@ class Metalbalers extends Component {
                             interval={1500}
                         >
                             <div>
-                                <img src={fullimg} alt="First Slide" className="carousel-image" style={{objectFit:"cover"}}/>
+                                <img src={metalshredderimg1} alt="First Slide" className="carousel-image" style={{objectFit:"cover"}}/>
                                 <p className="legend"> Metal Balers</p>
                             </div>
                             <div>
-                                <img src={fullimg} alt="Second Slide" className="carousel-image" style={{objectFit:"cover"}} />
+                                <img src={metalshredderimg2} alt="Second Slide" className="carousel-image" style={{objectFit:"cover"}} />
                                 <p className="legend">Metal Balers</p>
                             </div>
                             <div>
-                                <img src={fullimg} alt="Third Slide" className="carousel-image" style={{objectFit:"cover"}}/>
+                                <img src={metalshredderimg3} alt="Third Slide" className="carousel-image" style={{objectFit:"cover"}}/>
                                 <p className="legend">Metal Balers</p>
                             </div>
                         </Carousel>

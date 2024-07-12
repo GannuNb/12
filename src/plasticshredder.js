@@ -8,6 +8,9 @@ import shredderpiece3 from "./images/shredderpiece3.jpg"
 import { Carousel } from "react-responsive-carousel";
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
+import plasticbalersimage1 from "./images/plasticbalersimages1.jpg"
+
+import plasticbalersimage2 from "./images/plasticbalersimages2.jpg"
 
 
 
@@ -18,6 +21,9 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 
 class Plasticshredder extends Component {
+    componentDidMount() {
+        window.scrollTo(0, 0);
+    }
     render() {
         return (
             <>
@@ -35,15 +41,15 @@ class Plasticshredder extends Component {
                             interval={1500}
                         >
                             <div>
-                                <img src={shredderpiece3} alt="First Slide" className="carousel-image" style={{objectFit:"contain"}}/>
+                                <img src={plasticbalersimage1} alt="First Slide" className="carousel-image" style={{objectFit:"cover"}}/>
                                 <p className="legend">Plastic Shredder</p>
                             </div>
                             <div>
-                                <img src={shredderpiece2} alt="Second Slide" className="carousel-image" style={{objectFit:"contain"}} />
+                                <img src={plasticbalersimage2} alt="Second Slide" className="carousel-image" style={{objectFit:"cover"}} />
                                 <p className="legend">Plastic Shredder</p>
                             </div>
                             <div>
-                                <img src={shredderpiece1} alt="Third Slide" className="carousel-image" style={{objectFit:"contain"}}/>
+                                <img src={plasticbalersimage1} alt="Third Slide" className="carousel-image" style={{objectFit:"cover"}}/>
                                 <p className="legend">Plastic Shredder</p>
                             </div>
                         </Carousel>

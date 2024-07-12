@@ -7,14 +7,26 @@ import baler1img from "./images/baler1.png"
 import baler2img from "./images/baler2.png"
 import baler3img from "./images/baler3.png"
 import enquiryimg from "./images/enquiry.png"
+import bp3 from "./images/whatsup images/WhatsApp Image 2024-07-11 at 11.56.50 AM.jpeg"
+import bp4 from "./images/whatsup images/WhatsApp Image 2024-07-11 at 11.56.49 AM(1).jpeg"
+import bp5 from "./images/whatsup images/WhatsApp Image 2024-07-11 at 11.56.50 AM.jpeg"
+
+
 
 
 class Bproducts extends Component {
+    componentDidMount() {
+        window.scrollTo(0, 0);
+    }
     render() {
         return (
             <>
             <div className="bproducts-container">
-                <img className="baler-image" src={fullimg} alt="Baler" />
+                {/* <img className="baler-image" src={fullimg} alt="Baler" /> */}
+                <video className="responsive-video baler-image" controls>
+        <source src={`${process.env.PUBLIC_URL}/WhatsApp Video 2024-07-11 at 11.56.47 AM.mp4`} type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
 
 
                 <div className="description">
@@ -62,7 +74,7 @@ class Bproducts extends Component {
                 <div className="shredderproductscontainer">
   <Link to="/Baler">
   <div className="shredderproducts-item-appli">
-        <img className="shredderproducts-image-appli" alt="Baler" src={baler1img} />
+        <img className="shredderproducts-image-appli" alt="Baler" src={bp5} />
         <div className="shredderproducts-text-appli">Tyre Scrap Balers</div>
 
     </div>
@@ -74,7 +86,7 @@ class Bproducts extends Component {
     </div></Link>
         <Link to="/cbpsb">
     <div className="shredderproducts-item-appli">
-        <img className="shredderproducts-image-appli" alt="Cutting Equipment" src={baler3img} />
+        <img className="shredderproducts-image-appli" alt="Cutting Equipment" src={bp3} />
         <div className="shredderproducts-text-appli">
             <p>Card Board</p>
             
@@ -82,7 +94,7 @@ class Bproducts extends Component {
     </div></Link>
     <Link to="/metalbalers">
     <div className="shredderproducts-item-appli">
-        <img className="shredderproducts-image-appli" alt="Folding Equipment" src={baler2img} />
+        <img className="shredderproducts-image-appli" alt="Folding Equipment" src={bp4} />
         <div className="shredderproducts-text-appli">
             <p>Metal Balers</p>
             

@@ -4,10 +4,14 @@ import { Carousel } from "react-responsive-carousel";
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import "./tyrecutting.css"
 import './Plasticbaler.css'
-
+import paperandcardboardimg1 from "./images/cardboardbalerimages1.jpg"
+import  paperandcardboardimg2 from "./images/cardboardbalerimages2.jpg"
 
 
 class Cbpsb extends Component {
+    componentDidMount() {
+        window.scrollTo(0, 0);
+    }
   
     render() {
         return (
@@ -26,15 +30,15 @@ class Cbpsb extends Component {
                             interval={1500}
                         >
                             <div>
-                                <img src={fullimg} alt="First Slide" className="carousel-image" style={{objectFit:"cover"}}/>
+                                <img src={paperandcardboardimg1} alt="First Slide" className="carousel-image" style={{objectFit:"contain"}}/>
                                 <p className="legend"> Paper and Cardboard Balers</p>
                             </div>
                             <div>
-                                <img src={fullimg} alt="Second Slide" className="carousel-image" style={{objectFit:"cover"}} />
+                                <img src={paperandcardboardimg2} alt="Second Slide" className="carousel-image" style={{objectFit:"contain"}} />
                                 <p className="legend">Paper and Cardboard Balers</p>
                             </div>
                             <div>
-                                <img src={fullimg} alt="Third Slide" className="carousel-image" style={{objectFit:"cover"}}/>
+                                <img src={paperandcardboardimg1} alt="Third Slide" className="carousel-image" style={{objectFit:"contain"}}/>
                                 <p className="legend">Paper and Cardboard Balers</p>
                             </div>
                         </Carousel>

@@ -18,19 +18,24 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 
 class Baler extends Component {
-    handleDownload = () => {
-      
-      const link = document.createElement('a');
-      
-      link.href = `${process.env.PUBLIC_URL}/shredder.pdf`;
-     
-      link.download = 'shredder.pdf';
-      
-      document.body.appendChild(link);
-     
-      link.click();
-      
-      document.body.removeChild(link);
+    componentDidMount() {
+        window.scrollTo(0, 0);
+    }
+ 
+    
+     handleDownload = (fileName) => {
+        // Create a new anchor element
+        const link = document.createElement('a');
+        // Set the href to the PDF file
+        link.href = `${process.env.PUBLIC_URL}/${fileName}.pdf`;
+        // Set the download attribute to the desired file name
+        link.download = `${fileName}.pdf`;
+        // Append the anchor to the body
+        document.body.appendChild(link);
+        // Programmatically click the anchor
+        link.click();
+        // Remove the anchor from the body
+        document.body.removeChild(link);
     };
   
     render() {
@@ -82,7 +87,9 @@ class Baler extends Component {
                             <b>User friendly : </b>Our BLT-150 is equipped<br></br> with user friendly controls <br></br> 
                             <b>Result:</b>, operators can easily and safely operate the BLT-150.
                                </div>
-                               <button className="download-tyrescrap">Download Specification</button>
+                               <button className="download-tyrescrap" onClick={() => this.handleDownload('blt150')}>
+                                    Download Specification
+                                </button>
                             
                         </div>
                     </div>  </Link>
@@ -101,7 +108,9 @@ class Baler extends Component {
 <b>Function : </b>Our BLT-200 is engineered to efficiently compress   <br></br>
 <b>Result:</b>, operators can easily and safely operate the BLT-200.
                             </div>
-                            <button className="download-tyrescrap">Download Specification</button>
+                            <button className="download-tyrescrap" onClick={() => this.handleDownload('blt150')}>
+                                    Download Specification
+                                </button>
                             
                         </div>
                       </div></Link>
@@ -121,8 +130,9 @@ class Baler extends Component {
 <b>Result:</b>, operators can easily and safely operate the BLT-200.
                                 
                                 </div>
-                                <button className="download-tyrescrap">Download Specification</button>
-                           
+                                <button className="download-tyrescrap" onClick={() => this.handleDownload('blt150')}>
+                                    Download Specification
+                                </button>
                         </div>
 
                         </div></Link>

@@ -42,10 +42,11 @@ body {
   /* Media Queries for Carousel */
   @media (max-width: 768px) {
     .carousel-container {
-      max-width: 90%;
+      max-width: 75%;
       margin-left: auto;
       margin-right: auto;
       margin-top: 115px;
+      height: 310px;
     }
     .carousel-container img {
       height: 300px;
@@ -74,10 +75,11 @@ body {
   
   @media (max-width: 768px) {
     .carousel-container1 {
-      max-width: 90%;
+      max-width: 75%;
       margin-left: auto;
       margin-right: auto;
-      margin-top: 20px;
+      margin-top: auto;
+      height: 310px;
     }
     .carousel-container1 img {
       height: 300px;
@@ -157,6 +159,7 @@ body {
       margin-left: auto;
       margin-right: auto;
       margin-top: 20px;
+      text-align: justify;
     }
   }
   

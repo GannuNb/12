@@ -3,12 +3,6 @@ import React, { useState,useEffect } from 'react';
 import axios from 'axios'
 import { Link } from 'react-router-dom';
 import "./Login.css";
-import "./home.css"
-import lion from "./images/Lion.png"
-import face from "./images/face.png"
-import ins from "./images/ins.png"
-import yo from "./images/yo.png"
-import twi from "./images/twi.png"
 import { useLocation } from 'react-router-dom';
 
 
@@ -80,13 +74,13 @@ const Login = () => {
 
   return (
     <>
-      <div>
+      <div className='enqheadcontainer'>
         <h3 className='enqhead'>
           Please fill in your details to know more about our products and Services. We will get back to you within 48 hours 
         </h3>
-      </div>
+      
       <div className='enquiryform'> Enquiry form</div>
-
+      </div>
       <div className="login-container">
         
         <form className="login-form" onSubmit={handleSubmit}>
@@ -168,7 +162,6 @@ const Login = () => {
 
 
       
-      {/* <Footer/> */}
     </>
   );
 };

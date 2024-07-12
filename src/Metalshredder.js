@@ -9,10 +9,14 @@ import './Plasticbaler.css'
 import shredderpiece1 from "./images/shredderpiece1.jpg"
 import shredderpiece2 from "./images/shredderpiece2.jpg"
 import shredderpiece3 from "./images/shredderpiece3.jpg"
-
+import metalshredderimage1 from "./images/metalshredderimages1.jpg"
+import metalshredderimage2 from "./images/metalshredderimages2.jpg"
 
 
 class Metalshredder extends Component {
+    componentDidMount() {
+        window.scrollTo(0, 0);
+    }
     render() {
         return (
             <>
@@ -28,15 +32,15 @@ class Metalshredder extends Component {
                             interval={1500}
                         >
                             <div>
-                                <img src={shredderpiece3} alt="First Slide" className="carousel-image" style={{objectFit:"contain"}}/>
+                                <img src={metalshredderimage1} alt="First Slide" className="carousel-image" style={{objectFit:"cover"}}/>
                                 <p className="legend">Metal Shredder</p>
                             </div>
                             <div>
-                                <img src={shredderpiece2} alt="Second Slide" className="carousel-image" style={{objectFit:"contain"}} />
+                                <img src={metalshredderimage2} alt="Second Slide" className="carousel-image" style={{objectFit:"cover"}} />
                                 <p className="legend">Metal Shredder</p>
                             </div>
                             <div>
-                                <img src={shredderpiece1} alt="Third Slide" className="carousel-image" style={{objectFit:"contain"}}/>
+                                <img src={metalshredderimage1} alt="Third Slide" className="carousel-image" style={{objectFit:"cover"}}/>
                                 <p className="legend">Metal Shredder</p>
                             </div>
                         </Carousel>

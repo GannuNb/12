@@ -43,7 +43,7 @@ body {
     position: relative;
     bottom: 1%;
     margin-left: 50%;
-    margin-top: 4%;
+    margin-top: 3%;
     transform: translateX(-50%);
     background-color: white;
     color: black;
@@ -61,6 +61,7 @@ body {
     border: 1px solid black;
     transition: border 0.3s ease-in-out;
     margin-bottom: 1%;
+    line-height: 160%;
   }
   
   /* Keyframes for the rainbow effect */
@@ -149,20 +150,11 @@ gap: 6%;
 margin-top: 4%;
 padding: 3%;
 background-color:white;
-margin-left: 5%;
-}
-.shredderproductscontainer::before {
-  content: '';
-  position: relative;
-  top: calc(20% + 4%); 
-  left: 0;
-  width: 100%;
-  height: calc(100% - (20% + 4%)); 
-  background: linear-gradient(to bottom, transparent, rgba(0, 255, 0, 0.5), rgba(0, 128, 0, 1)); 
-  z-index: 1; 
+margin-left: 3%;
 }
 
 .shredderproducts-item-appli {
+  position: relative; /* Add this */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -177,6 +169,7 @@ margin-left: 5%;
   transition: transform 0.2s, box-shadow 0.2s;
   text-align: center;
   box-sizing: border-box;
+  overflow: hidden;
  
 }
 
@@ -190,8 +183,9 @@ margin-left: 5%;
   height: 48%;
   max-height: 200px;
   object-fit: cover;
-  border-radius: 10px;
+  border-radius: 5px;
   margin-top: 7%;
+  z-index: 2;
 }
 
 .shredderproducts-text-appli {
@@ -205,16 +199,30 @@ margin-left: 5%;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  z-index: 3;
 }
 
 .shredderproducts-text-appli p {
   margin: 0;
 }
 
+
 .shredderproducts-item-appli:hover {
   transform: scale(1.1); /* Scale up the card item */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow effect */
 }
+
+.shredderproducts-item-appli::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50%; /* Adjust height to match the gradient effect */
+  background: linear-gradient(to top, #00ff00, rgba(0, 255, 0, 0)); /* Green gradient */
+  z-index: 1; /* Place the gradient below the image and text */
+}
+
 
 
 @media only screen and (max-width: 600px) {
@@ -232,7 +240,7 @@ margin-left: 5%;
   }
 
   .shredderproducts-image-appli {
-      width: 100%;
+      width: 80%;
       height: 100px; /* Adjust height for images on smaller screens */
       object-fit: cover;
       border-radius: 4px;
@@ -256,12 +264,12 @@ margin-left: 5%;
   display: flex;
   align-items: center;
   margin-top: 5%;
-  margin-left: 9%;
+  margin-left: 3%;
 }
 
 .enq-balerapp {
   width: 6%;
-  height: 15%;
+  height: 12%;
   margin-right: 4%;
   
 }
@@ -294,8 +302,20 @@ margin-left: 5%;
     margin-bottom: 5%;
   }
   .enquiry-balerapp {
-    font-size: 53%;
-    line-height: 12%;
+    font-size: 92%;
+    line-height: 110%;
     
   }
+}
+
+
+
+
+.video-container {
+  text-align: center;
+}
+
+.responsive-video {
+  max-width: 100%;
+  height: 128%;
 }

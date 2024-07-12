@@ -18,8 +18,18 @@ import Tyreshredder from './Tyreshredder.js';
 import Metalshredder from './Metalshredder.js';
 import Plasticshredder from './plasticshredder.js';
 import Paperandcardboardshredder from './paperandcardboardshredder.js';
-
-
+import Sht2000 from './sht2000.js';
+import Sht4000 from './Sht4000.js';
+import Sht8000 from './Sht8000.js';
+import Blt200 from './Blt200.js';
+import Blt250 from './Blt250.js';
+import Blt150 from './Blt150.js';
+import Tcpcr100 from './Tcpcr100.js';
+import Tcotr100 from './Tcotr100.js';
+import Tctb100 from './Tctb100.js';
+import Tftbr100 from './Tftbr100.js';
+import Tfpcr100 from './Tfpcr100.js';
+import Login from './Login.js';
 
 function App() {
   return (
@@ -30,8 +40,9 @@ function App() {
                   <Routes>
                       <Route exact path="/" element={<Home />} />
                       <Route path="/AboutUsPage" element={<AboutUsPage />} /> 
-                      {/* <Route path="/Login" element={<Login />} /> */}
+                      
                       <Route path="/contact" element={<Contactus />} />
+                      <Route path="/Login" element={<Login />} />
                       <Route path='/bproducts' element ={<Bproducts/>}/>
                       <Route path='/shredderproducts' element={<Shredderproducts/>}/>
                       <Route path="/Tyre cutting" element={<Tyrecutting />} />
@@ -44,6 +55,19 @@ function App() {
                       <Route path='/metalshredder' element={<Metalshredder/>}/>
                       <Route path='/plasticshredder' element={<Plasticshredder/>}/>
                       <Route path='/paperandcardboardshredder' element={<Paperandcardboardshredder/>}/>
+                      <Route path="/Sht2000" element={<Sht2000 />} />
+                      <Route path="/Sht4000" element={<Sht4000 />} />
+
+
+                      <Route path="/Blt150" element={<Blt150 />} />
+                        <Route path="/Blt200" element={<Blt200 />} />
+                          <Route path="/Blt250" element={< Blt250/>} />
+                          <Route path="/Sht8000" element={<Sht8000/>} />
+                                  <Route path="/Tfpcr100" element={<Tfpcr100 />} />
+                                    <Route path="/Tftbr100" element={<Tftbr100 />} />
+                                      <Route path="/Tcpcr100" element={<Tcpcr100 />} />
+                                        <Route path="/Tctb100" element={<Tctb100 />} />
+                                          <Route path="/Tcotr100" element={<Tcotr100 />} />
 
                   </Routes>
               </div>

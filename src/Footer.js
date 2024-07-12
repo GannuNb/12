@@ -8,6 +8,9 @@ import twi from "./images/twi.png";
 import './footer.css';
 
 class Footer extends Component {
+  componentDidMount() {
+    window.scrollTo(0, 0);
+}
   render() {
     return (
       <div className="footer">
@@ -34,11 +37,11 @@ class Footer extends Component {
         </div>
 
         <div className="footer-contact">
-          <div><b>Contact Us</b></div>
-          <div><b>Admin Off:</b> #406, 4th Floor, Patel Towers,<br/>Above EasyBuy Beside Nagole RTO Office,<br/>Nagole Hyderabad, Telangana-500035</div>
-          <div><b>Unit Add:</b> Plot No-9, The Indira Gandhi Co-Operative<br/>Housing Society, Gagan Pahad, Hyderabad,<br/>Rangareddy, Telangana, 500052</div>
-          <div><b>Off:</b> +914049471616</div>
-          <div><b>Email:</b> Info@vikahecotech.com</div>
+          <div className="footerdivision"><b>Contact Us</b></div>
+          <div className="footerdivision"><b>Admin Off:</b> #406, 4th Floor, Patel Towers,<br/>Above EasyBuy Beside Nagole RTO Office,<br/>Nagole Hyderabad, Telangana-500035</div>
+          <div className="footerdivision"><b>Unit Add:</b> Plot No-9, The Indira Gandhi Co-Operative<br/>Housing Society, Gagan Pahad, Hyderabad,<br/>Rangareddy, Telangana, 500052</div>
+          <div className="footerdivision"><b>Off:</b> +914049471616</div>
+          <div className="footerdivision"><b>Email:</b> Info@vikahecotech.com</div>
         </div>
 
         <div className="footer-text">

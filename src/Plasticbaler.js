@@ -5,8 +5,14 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import "./tyrecutting.css"
 import './Plasticbaler.css'
 
+import Plasticbalersimage1 from "./images/plasticbalersimages1.jpg"
+import Plasticbalersimage2 from "./images/plasticbalersimages2.jpg"
+
 
 class Plasticbalers extends Component {
+    componentDidMount() {
+        window.scrollTo(0, 0);
+    }
     render() {
         return (
             <>
@@ -22,15 +28,15 @@ class Plasticbalers extends Component {
                             interval={1500}
                         >
                             <div>
-                                <img src={fullimg} alt="First Slide" className="carousel-image" style={{objectFit:"cover"}}/>
+                                <img src={Plasticbalersimage1} alt="First Slide" className="carousel-image" style={{objectFit:"cover",width:"100%"}}/>
                                 <p className="legend"> Plastic Balers</p>
                             </div>
                             <div>
-                                <img src={fullimg} alt="Second Slide" className="carousel-image" style={{objectFit:"cover"}} />
+                                <img src={Plasticbalersimage2} alt="Second Slide" className="carousel-image" style={{objectFit:"cover",width:"100%"}} />
                                 <p className="legend">Plastic Balers</p>
                             </div>
                             <div>
-                                <img src={fullimg} alt="Third Slide" className="carousel-image" style={{objectFit:"cover"}}/>
+                                <img src={Plasticbalersimage1} alt="Third Slide" className="carousel-image" style={{objectFit:"cover",width:"100%"}}/>
                                 <p className="legend">Plastic Balers</p>
                             </div>
                         </Carousel>

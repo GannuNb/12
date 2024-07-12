@@ -6,9 +6,12 @@ import { Link } from "react-router-dom";
 import tyrefoldingimg from "./images/tyre folding1.jpg"
 import tyrefoldingimg1 from "./images/tyre folding2.jpg"
 import tyrefoldingimg2 from "./images/tyre folding3.jpg"
-
+import enquiryimg from "./images/enquiry.png"
 
 class Tyrefolding extends Component {
+    componentDidMount() {
+        window.scrollTo(0, 0);
+    }
     render() {
         return (
             <>
@@ -101,6 +104,13 @@ class Tyrefolding extends Component {
         </div>
     </Link> */}
 </div>
+
+<div className='enquiry-balerapp-container'>
+                    <img className="enq-balerapp" src={enquiryimg} alt="Enquiry"/>
+                    <div className='enquiry-balerapp'> 
+                    For more information about your Folding requirement please enquire us at <a href="mailto:info@vikahecotech@gmail.com"> info@vikahecotech.com</a> 
+                    </div>
+                    </div>
 
 
 

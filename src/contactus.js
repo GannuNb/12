@@ -3,9 +3,11 @@ import { Link } from "react-router-dom";
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
+
+
 import logo from "./images/logo.png";
 import "./contactus.css"
-import "./cu.css"
+// import "./cu.css"
 import india from  "./images/india.png"
 import contactimg from "./images/contactus.png"
 import view from "./images/view.jpg"
@@ -16,12 +18,17 @@ import uae from "./images/uae.jpg"
 import instapage from "./images/001.PNG"
 import twitterpage from "./images/twitterpage.PNG"
 import australiaflag from "./images/australia.webp"
+import facebookhome from "./images/face.png"
 
 
 
 
 
 class Contactus extends Component{
+
+  componentDidMount() {
+    window.scrollTo(0, 0);
+}
     render(){
         return(
             <>
@@ -33,7 +40,7 @@ class Contactus extends Component{
                 
                 <div className="carosel">
                 <Carousel
-                    showArrows={false}
+                    showArrows={true}
                     autoPlay={true}
                     infiniteLoop={true}
                     showThumbs={false}
@@ -42,15 +49,15 @@ class Contactus extends Component{
                     interval={3000}
                 >
                     <div>
-                        <img src={contactimg} alt="Contact Us" />
+                        <img style={{objectFit:"cover",width:"100%"}} src={contactimg} alt="Contact Us" />
                         <p className="legend">Contact Us</p>
                     </div>
                     <div>
-                        <img src={emailus} alt="Email Us" />
+                        <img style={{objectFit:"cover",width:"100%"}} src={emailus} alt="Email Us" />
                         <p className="legend">Email Us</p>
                     </div>
                     <div>
-                        <img src={view} alt="Visit our Website" />
+                        <img style={{objectFit:"cover",width:"100%"}} src={view} alt="Visit our Website" />
                         <p className="legend">Visit our Website</p>
                     </div>
                 </Carousel>
@@ -89,7 +96,7 @@ class Contactus extends Component{
     <div className="card-footer">
       <div className="contact-info">
         <div className="contact-item">
-          <b>Off :</b><span> :+914049471616</span><br></br>
+          <b>Off :</b><span> +914049471616</span><br></br>
           
         </div>
         <div className="contact-item"><b>Mobile:</b> <span>+91 9515162108</span></div>
@@ -187,7 +194,7 @@ class Contactus extends Component{
     <div className="card-footer">
       <div className="contact-info">
         <div className="contact-item">
-          <b>Off :</b><span> :+968 79211933</span><br></br>
+          <b>Off :</b><span> +968 79211933</span><br></br>
           
         </div>
        
@@ -228,7 +235,7 @@ class Contactus extends Component{
     <div className="card-footer">
       <div className="contact-info">
         <div className="contact-item">
-          <b>Off :</b><span> :: +64223136208</span><br></br>
+          <b>Off :</b><span>  +64223136208</span><br></br>
           
         </div>
        
@@ -247,7 +254,7 @@ class Contactus extends Component{
  
 </div>
 
-<div className="contact-card">
+{/* <div className="contact-card">
   <div className="card-content">
     <div className="card-header">
       <b className="head-office">Australia</b>
@@ -280,15 +287,42 @@ class Contactus extends Component{
         <div className="contact-item">
           <b>Email:</b> <span>Info@VikahEcotech.com</span>
         </div>
-        {/* <div className="contact-item">
-          <b>Website:</b> <span>www.vikhaecotech.com</span>
-        </div> */}
+    
       </div>
     </div>
   </div>
  
+</div> */}
 </div>
+
+
+<div className="socialcontainer">
+    <a href="https://www.instagram.com/vikahecotech/">
+        <div className="socialcard">
+            <div className="socialheader">Instagram</div>
+            <div className="socialcontent">
+                <img src={instapage} alt="Instagram Page"/>
+            </div>
+        </div>
+    </a>
+    <a href="https://www.facebook.com/profile.php?id=61560470207451">
+        <div className="socialcard">
+            <div className="socialheader">Facebook</div>
+            <div className="socialcontent">
+                <iframe src={facebookhome} title="Facebook"></iframe>
+            </div>
+        </div>
+    </a>
+    <a href="https://x.com/vikahecotech">
+        <div className="socialcard">
+            <div className="socialheader">Twitter</div>
+            <div className="socialcontent">
+                <img src={twitterpage} alt="Twitter Page"/>
+            </div>
+        </div>
+    </a>
 </div>
+
 
                     
 

@@ -9,7 +9,7 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import shredderpiece1 from "./images/shredderpiece1.jpg"
 import shredderpiece2 from "./images/shredderpiece2.jpg"
 import shredderpiece3 from "./images/shredderpiece3.jpg"
-
+import shredderimg3 from './images/shredderimg3.jpeg'
 
 
 
@@ -25,6 +25,9 @@ import shredderpiece3 from "./images/shredderpiece3.jpg"
 
 
 class Tyreshredder extends Component {
+    componentDidMount() {
+        window.scrollTo(0, 0);
+    }
  
  
     render() {
@@ -62,9 +65,9 @@ class Tyreshredder extends Component {
                 <div className="heading-tyrescrap">Model Numbers </div>
 
                 <div className="bot">
-                   <Link to="/Blt150"> <div className="card-container1-cutting-tyrescrap">
+                   <Link to="/Sht2000"> <div className="card-container1-cutting-tyrescrap">
                         <div className="card-item-cutting">
-                            <img className="card-image-cutting" alt="Baler" src={shrederimg2} />
+                            <img className="card-image-cutting" alt="Baler" src={shrederimg} />
                             <div className="title-cutting">SHT2000</div>
                             <div className="rating-cutting">★★★★★</div>
                             <div className="description1-cutting"> 
@@ -80,10 +83,10 @@ class Tyreshredder extends Component {
                         </div>
                     </div>  </Link>
 
-              <Link to="/Blt200">        
+              <Link to="/Sht4000">        
              <div className="card-container1-cutting-tyrescrap">
                         <div className="card-item-cutting">
-                            <img className="card-image-cutting" alt="Baler" src={shrederimg} />
+                            <img className="card-image-cutting" alt="Baler" src={shredderimg3} />
                             <div className="title-cutting">SHT4000</div>
                             <div className="rating-cutting">★★★★★</div>
                             <div className="description1-cutting">

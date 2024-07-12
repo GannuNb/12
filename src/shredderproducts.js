@@ -11,6 +11,9 @@ import enquiryimg from "./images/enquiry.png"
 
 
 class Shredderproducts extends Component {
+    componentDidMount() {
+        window.scrollTo(0, 0);
+    }
     render() {
         return (
             <>
@@ -65,13 +68,13 @@ class Shredderproducts extends Component {
   <Link to="/tyreshredder">
   <div className="shredderproducts-item-appli">
         <img className="shredderproducts-image-appli" alt="Baler" src={shrederimg} />
-        <div className="shredderproducts-text-appli">Tyre Shredder"</div>
+        <div className="shredderproducts-text-appli">Tyre Shredder</div>
 
     </div>
     </Link>
    <Link to="/metalshredder">
     <div className="shredderproducts-item-appli">
-        <img className="shredderproducts-image-appli" alt="Shredders" src={shrederimg2} />
+        <img className="shredderproducts-image-appli" alt="Shredders" src={shrederimg} />
         <div className="shredderproducts-text-appli">Metal Shredder</div>
     </div></Link>
         <Link to="/plasticshredder">

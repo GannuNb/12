@@ -6,9 +6,12 @@ import { Link } from "react-router-dom";
 import tyrecimage from "./images/tyrecutting1.jpg"
 import tyrecimage2 from "./images/tyrecutting2.webp"
 import tyrecimage3 from "./images/tyrecutting3.jpg"
-
+import enquiryimg from "./images/enquiry.png"
 
 class Tyrecutting extends Component {
+    componentDidMount() {
+        window.scrollTo(0, 0);
+    }
     render() {
         return (
             <>
@@ -112,7 +115,12 @@ class Tyrecutting extends Component {
 
 
  
-
+<div className='enquiry-balerapp-container'>
+                    <img className="enq-balerapp" src={enquiryimg} alt="Enquiry"/>
+                    <div className='enquiry-balerapp'> 
+                    For more information about your Tyre cuttting requirement please enquire us at <a href="mailto:info@vikahecotech@gmail.com"> info@vikahecotech.com</a> 
+                    </div>
+                    </div>
 
 
 

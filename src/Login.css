@@ -1,16 +1,69 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
   }
+  .enqheadcontainer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin-top: 10%;
+    margin-left: 6%;
+  }
+  
+  .enqhead, .enquiryform {
+    position: relative;
+    margin-top: 3%;
+    margin-bottom: 0%;
+    font-size: 1.1rem;
+    margin-left: 5%;
+    font-weight: bold;
+  }
+  
+  .enquiryform {
+    font-size: 1.6rem;
+    margin-left: 30%;
+    color: blue;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .enqheadcontainer {
+      margin-top: 18%;
+      margin-left: 4%;
+    }
+  
+    .enqhead, .enquiryform {
+      margin-top: 2%;
+      margin-left: 3%;
+      font-size: 1rem;
+      margin-bottom: 8%;
+      align-items: justify;
+    }
+  
+    .enquiryform {
+      font-size: 1.2rem;
+      margin-left: 33%;
+      color: blue;
+    }
+  }
+  
+
+
+
+
+
+
+
+
   
   .login-container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 40px;
+    padding: 20px;
     border: 1px solid #ccc;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     font-size: 10px;
-    margin-top: 90px;
+    margin-top: 6%;
     font-family: Arial, Helvetica, sans-serif;
   }
   
@@ -51,8 +104,8 @@ body {
   /* Media Query for larger screens */
   @media (min-width: 769px) {
     .login-container {
-      margin-right: 400px;
-      margin-left: 45px;
+      margin-right: 320px;
+      margin-left: 100px;
     }
   }
   
@@ -132,23 +185,3 @@ body {
     font-size: 18px;
   }
   
-  .enqhead {
-    margin-top: 116px;
-    margin-bottom: -26px;
-    font-size: 19px;
-    margin-left: -395px;
-    font-family: inherit;
-    font-weight: bold;
-  }
-  
-  .enquiryform {
-   
-    margin-top: 68px;
-    margin-left: 509px;
-    margin-bottom: -30px;
-    font-family: inherit;
-    font-weight: bold;
-    color: blue;
-    font-size: 28px;
-  
-  }

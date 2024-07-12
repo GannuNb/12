@@ -10,8 +10,18 @@ import { Carousel } from "react-responsive-carousel";
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 
+import cardboardimg1 from "./images/cardboardbalerimages3.jpg"
+import  paperandcardboardimg2 from "./images/cardboardbalerimages2.jpg"
+
+
+
+
+
 
 class Paperandcardboardshredder extends Component {
+    componentDidMount() {
+        window.scrollTo(0, 0);
+    }
     render() {
         return (
             <>
@@ -28,16 +38,8 @@ class Paperandcardboardshredder extends Component {
                             showIndicators={true}
                             interval={1500}
                         >
-                            <div>
-                                <img   src={shredderpiece3} alt="First Slide" className="carousel-image" style={{objectFit:"contain"}}/>
-                                <p className="legend"> Paper and Card Board</p>
-                            </div>
-                            <div>
-                                <img src={shredderpiece2} alt="Second Slide" className="carousel-image" style={{objectFit:"contain"}} />
-                                <p className="legend"> Paper and Card Board</p>
-                            </div>
-                            <div>
-                                <img src={shredderpiece1} alt="Third Slide" className="carousel-image" style={{objectFit:"contain"}}/>
+                           <div>
+                                <img   src={cardboardimg1} alt="First Slide" className="carousel-image" style={{objectFit:"contain"}}/>
                                 <p className="legend"> Paper and Card Board</p>
                             </div>
                         </Carousel>
